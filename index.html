@@ -10,7 +10,7 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg " style="background-color:black">
+    <nav class="navbar navbar-expand-lg " style="background-color: black;">
         <div class="container-fluid">
           <a class="navbar-brand" href="#" style="color:white">Blogging Website</a>
           <button
@@ -37,68 +37,73 @@
           </div>
         </div>
       </nav>
-
-
-     
-      
-      
-      <div>
-      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Create A Post</h1>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                
-              </button>
-            </div>
-            <div class="modal-body">
-                <div class="form-group">
-                    <label for="heading" class="col-form-label"></label>
-                    <input type="text" class="form-control" id="heading " placeholder="Enter Your Heading.....">
-                  </div>
+  
+    
+    <!-- Modal -->
+    <div>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Create A Post</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
                   <div class="form-group">
-                    <label for="message-text" class="col-form-label"></label>
-                    <textarea class="form-control" id="message-text" placeholder="Enter Your Blog Post....."></textarea>
-                  </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" id="publish"class="btn btn-dark" data-dismiss="modal">Publish Post</button>
-              <button type="button" class="btn btn-dark">Cancel Post</button>
+                      <label for="heading" class="form-label"></label>
+                      <input type="text" class="form-control form-control-lg" id="heading" placeholder="Enter Your Heading......." >
+                    </div>
+                    <div class="form-group">
+                      <label for="message-text" class="form-label"></label>
+                      <textarea class="form-control form-control-lg" id="message-text" rows="3" placeholder="Enter Your Blog Post......."></textarea>
+                    </div>
+              </div>
+              <div class="modal-footer">
+              
+                <button type="button" id="saveBlogbut" data-bs-dismiss="modal" class="btn btn-dark">Publish Post</button>
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cancel Post</button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      </div>
-      
-      <div class="modal fade editmodal" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+    </div>
+  
+    <!-- Button trigger modal -->
+  
+    
+    <!-- edit Modal -->
+    <div class="modal fade editmodal" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Create A post</h1>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                
-              </button>
+              <h1 class="modal-title fs-5" id="exampleModalLongTitle">Create A Post</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <label for="heading" class="col-form-label"></label>
-                    <input type="text" class="form-control" id="heading " placeholder="Enter Your Heading.....">
+                    <label for="heading" class="form-label"></label>
+                    <input type="text" class="form-control form-control-lg" id="heading" placeholder="Enter Your Heading">
                   </div>
-                  <div class="form-group">
-                    <label for="message-text" class="col-form-label"></label>
-                    <textarea class="form-control" id="message-text" placeholder="Enter Your Blog Post....."></textarea>
+                  <div class="from-group">
+                    <label for="message-text" class="form-label"></label>
+                    <textarea class="form-control form-control-lg" id="message-text" rows="3" placeholder="Enter Your Blog Post"></textarea>
                   </div>
             </div>
             <div class="modal-footer">
-              <button type="button" id= "publish"class="btn btn-dark" data-dismiss="modal">Publish Post</button>
-              <button type="button" class="btn btn-dark">Cancel Post</button>
+              <button type="button"  class="btn btn-dark  " data-bs-dismiss="modal">Cancel Post</button>
+              <button type="button" id="publish" data-bs-dismiss="modal" class="btn btn-dark">Publish Post</button>
             </div>
           </div>
         </div>
-      </div>
-      <div class="container-fluid" id="blog-web"></div>
+    </div>
+    
+  
+      <div class="container-fluid " id="blog-web">
+         
+             
       
+             
+      </div>
   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="script.js"></script>
